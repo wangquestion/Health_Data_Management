@@ -46,6 +46,9 @@ For example the following command apply 4 CPU cores, 32GB memory on the interact
 
 `sallow -p interactive-cpu -n 4 -6 1-00:00 --mem=32000`
 `ssh -L 8999:localhost:8999 $SLURM_JOB_NODELIST`
+
+> You may fail to applicate 4 cores, you may need to change the CPU number to 1 for a authorization from the HPC.
+
 ### 6. Start Jupiter Server Under Home Directory:
 > You may need to re-login to the HPC and activate the r-env to make the jupyter command accessible.
 
