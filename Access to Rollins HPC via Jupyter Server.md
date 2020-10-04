@@ -30,21 +30,29 @@ The latest version of Miniconda can be downloaded from the link below:
 https://docs.conda.io/en/latest/miniconda.html
 Create download dir:
 `mkdir download`
+
 `cd downloaed`
+
 `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
+
 `bash ./Miniconda3-latest-Linux-x86_64.sh`
+
 Follow the instructions to install miniconda. You need to re-login to continue the following steps.
 ### 4. Install R
 Creat an environment, named 'r-env', install r-base and r-essentials packages
 `conda create -n r-env r-base r-essentials`
+
 `conda activate r-env`
+
 `conda install jupyter`
+
 ### 5. Allocate Computation Resources on the HPC
 > Attention: Do not run computation intensive jobs on the login node. We need to run R on the interactive-cpu partition.
 
 For example the following command apply 4 CPU cores, 32GB memory on the interactive-cpu partition.
 
 `sallow -p interactive-cpu -n 4 -6 1-00:00 --mem=32000`
+
 `ssh -L 8999:localhost:8999 $SLURM_JOB_NODELIST`
 
 > You may fail to applicate 4 cores, you may need to change the CPU number to 1 for a authorization from the HPC.
@@ -53,6 +61,7 @@ For example the following command apply 4 CPU cores, 32GB memory on the interact
 > You may need to re-login to the HPC and activate the r-env to make the jupyter command accessible.
 
 `jupyter notebook --NotebookApp.toke=‘PASSWORD’ --no-browser --port=8999`
+
 >Please set adequate password to maintain secure link to jupyter server.
 
 You may save this line of command into a file under ~/bin/myjupyter, then add execute, chmod 755 myjupyter, next time you may just type myjupyter to start jupyter notebook.
