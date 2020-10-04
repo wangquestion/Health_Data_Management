@@ -57,6 +57,8 @@ You may save this line of command into a file under ~/bin/myjupyter, then add ex
 ### 7. Open Jupyter Notebook at Local Machine.
 On you own PC (Mac, Linux, Windows), open your browser, type at the address bar and visit:
 [http://localhost:8999](http://localhost:8999/)
+> You may need to enter the password you set at Step 6.
+
 Jupyter Notebook should start in your browser.
 
 ### 8. Open R script to link the session
