@@ -98,4 +98,12 @@ Type 'qstat' to make sure the session is not running.
 
 Then, you can use 'exit' again to end HPC connection.
 
+### 9. Package Install in R environment
+First, you need to activate the R environment
+
+`conda activate r-env`
+
+Then use conda function to install R package
+
+`conda install r-(package nam)`
 
