@@ -29,6 +29,11 @@ In terminal, type:
 
 >Note: You should have already finished the onboard process of the HPC by resetting passowrd.
 
+>Hint: For Mac OS Catalina Users, you need to use bash script instead of default zsh scrit by following command:
+
+`bash`
+
+
 ### 3. Download Miniconda
 
 The latest version of Miniconda can be downloaded from the link below:
