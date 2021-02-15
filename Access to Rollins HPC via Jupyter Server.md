@@ -1,4 +1,7 @@
-﻿# Access to Rollins HPC R environment, using Conda an Jupyter Server 
+## Wenhao Wang
+
+
+# Access to Rollins HPC R environment, using Conda an Jupyter Server 
 
 ## Why Conda?
 
@@ -82,6 +85,8 @@ You may save this line of command into a file under ~/bin/myjupyter, then add ex
 On you own PC (Mac, Linux, Windows), open your browser, type at the address bar and visit:
 
 [http://localhost:8999](http://localhost:8999/)
+
+> You may need to select different dock of use.
 
 > You may need to enter the password you set at Step 6.
 
