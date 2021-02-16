@@ -75,6 +75,8 @@ For example, the following command apply 4 CPU cores, 32GB memory on the interac
 ### 6. Start Jupiter Server Under Home Directory:
 > You may need to re-login to the HPC and activate the r-env to make the jupyter command accessible.
 
+`conda activate r-env`
+
 `jupyter notebook --NotebookApp.token=‘PASSWORD’ --no-browser --port=8999`
 
 >Please set adequate password to maintain secure link to jupyter server.
